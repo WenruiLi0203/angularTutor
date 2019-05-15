@@ -1,0 +1,41 @@
+.container{
+  position: relative;
+  border: solid 2px green;
+  padding: 0;
+}
+
+nav{
+  position: absolute;
+  display: inline-block;
+  width: 25%;
+  border: solid 2px red;
+  color:red;
+  vertical-align: top;
+}
+
+section{
+  border: solid 2px gold;
+  padding: 15px;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  background-color: white;
+  width: 100%;
+  border: solid 2px blue;
+}
+
+body{
+  margin-bottom: 120px;
+}
+
+.column{
+  display:inline-block;
+  vertical-align: top;
+  width:75%;
+  margin-left:25%;
+  border: solid 2px red;
+}
