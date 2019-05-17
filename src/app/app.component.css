@@ -1,0 +1,42 @@
+.main-container{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 700px;
+  width: 1000px;
+  padding: 40px;
+  background-color: lightblue;
+  box-shadow: 0rem .2rem .5rem rgba(0,0,0,0.5)
+}
+
+.side-container{
+  background-color: white;
+  margin:10px;
+  height: 500px;
+  width: 50px;
+  box-shadow: 0rem .2rem .5rem rgba(0,0,0,0.5)
+}
+
+.padding-10{
+  padding: 10px;
+}
+
+.padding-30{
+  padding: 30px;
+}
+
+.bottom-container{
+  height: 100px;
+  width: 100%;
+}
+
+.box{
+  display:inline-block;
+  padding: 20px;
+}
+
+
+

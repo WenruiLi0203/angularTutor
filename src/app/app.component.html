@@ -1,5 +1,63 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!--The content below is only a placeholder and can be replaced.
 <h3> I'm in the AppComponent!</h3>
 <hr>
-<app-server></app-server>
-<!--<div app-server> </div>-->
+<app-server></app-server>-->
+<div class="container">
+  <h1 class="nav justify-content-center padding-30">Make a Burger !</h1>
+  <div class="main-container">
+    <div class="row">
+      <div class="side-container col">
+        <h3 class="nav justify-content-center padding-10">Meet</h3>
+        <div class="col box">
+          <button class="btn btn-primary" (click)="addData('Beef')">Beef</button>
+        </div>
+        <div class="col box">
+          <button class="btn btn-primary" (click)="addData('Chick')">Chick</button></div>
+        <div class="col box">
+          <button class="btn btn-primary" (click)="addData('Sausage')">Sausage</button>
+        </div>
+      </div>
+      <div class="side-container col">
+        <h3 class="nav justify-content-center padding-10">Vegetable</h3>
+        <div class="col box">
+          <button class="btn btn-primary" (click)="addData('Lettuce')">Lettuce</button>
+        </div>
+        <div class="col box">
+          <button class="btn btn-primary" (click)="addData('Onion')">Onion</button>
+        </div>
+        <div class="col box">
+          <button class="btn btn-primary" (click)="addData('Tomato')">Tomato</button>
+        </div>
+        <div class="col box">
+          <button class="btn btn-primary" (click)="addData('Chess')">Chess</button>
+        </div>
+      </div>
+      <div class="side-container col">
+        <h3 class="nav justify-content-center padding-10">Bun</h3>
+        <div class="col box">
+          <button class="btn btn-primary" (click)="addData('Burger Bun')">Burger Bun</button>
+        </div>
+        <div class="col box">
+          <button class="btn btn-primary" (click)="addData('Sausage Bun')">Sausage Bun</button>
+        </div>
+      </div>
+      <div class="side-container col">
+        <h3 class="nav justify-content-center padding-10">Selected</h3>
+        <ul>
+          <li *ngFor="let dat of data; let i = index">
+            {{ i + 1 }} - {{dat}}
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-container">
+      <div class="nav justify-content-center padding-30">
+        <button class="btn btn-info" (click)="submit()">Submit</button>
+        <button class="btn btn-danger" (click)="reset()">Reset</button>
+      </div>
+      <div class="nav justify-content-center">
+        {{ret}}
+      </div>
+    </div>
+  </div>
+</div>
